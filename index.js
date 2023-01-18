@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const express=require('express');//import express
+const cors=require('cors');
+app.use(cors())
 const db=require('./db/connect');
 const employeeRoutes=require('./routes/employees.route')//Importing Routes
 const app=express();//initiate express
